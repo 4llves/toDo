@@ -2,6 +2,7 @@ import styles from './App.module.css'
 import './global.css'
 
 import LogoImg from './assets/Logo.png'
+import { Input } from './components/Input'
 
 export function App() {
   return (
@@ -9,7 +10,9 @@ export function App() {
       <div className={styles.image}>
         <img src={LogoImg} alt="" />
       </div>
-      <main></main>
+      <main>
+        <Input />
+      </main>
     </div>
   )
 }
