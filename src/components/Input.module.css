@@ -3,13 +3,14 @@
   display: flex;  
   justify-content: center;
   margin-top: 53px;
+  gap: .5rem;
 }
 
 input {
   display: flex;
   width: 28.1875rem;
   padding: 1rem;
-  align-items: center;  
+  align-items: center;
   
   border-radius: 0.5rem;
 

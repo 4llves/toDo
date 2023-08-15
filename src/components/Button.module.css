@@ -1,0 +1,30 @@
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  
+  padding: 1rem;
+  border: 0;  
+  border-radius: 0.5rem;
+  
+  color: var(--gray-100);
+  background: var(--blue-dark);
+
+  gap: 0.5rem;
+
+  font-family: Inter;
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 140%; /* 1.225rem */ 
+
+  > svg {
+    font-size: 1rem;
+  }
+}
+
+.wrapper:hover {
+  background: var(--blue);
+}
+
