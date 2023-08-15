@@ -1,5 +1,23 @@
 .wrapper {
   width: 100%;
+  display: flex;  
+  justify-content: center;
+  margin-top: 53px;
+}
+
+input {
   display: flex;
-  margin: 0 auto;
+  width: 28.1875rem;
+  padding: 1rem;
+  align-items: center;  
+  
+  border-radius: 0.5rem;
+
+  border: 1px solid var(--gray-700);
+  background: var(--gray-500);
+  color: var(--gray-100);
+}
+
+input:focus {
+  border: 1px solid var(--purple-dark);
 }

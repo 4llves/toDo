@@ -11,7 +11,7 @@ export function App() {
         <img src={LogoImg} alt="" />
       </div>
       <main>
-        <Input />
+        <Input placeholder="Adicione uma nova tarefa" />
       </main>
     </div>
   )
