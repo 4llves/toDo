@@ -3,6 +3,7 @@ import './global.css'
 
 import LogoImg from './assets/Logo.png'
 import { Input } from './components/Input'
+import { Task } from './components/Task'
 
 export function App() {
   return (
@@ -12,6 +13,10 @@ export function App() {
       </div>
       <main>
         <Input placeholder="Adicione uma nova tarefa" />
+
+        <section>
+          <Task />
+        </section>
       </main>
     </div>
   )
