@@ -1,0 +1,64 @@
+.wrapper {
+  width: 100%;  
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 46rem;
+}
+
+.amountOfTasks {  
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 4rem;
+}
+
+.taskCreated, .taskFinished {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;  
+}
+
+.taskCreated p, .taskFinished p {  
+  font-family: Inter;
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.taskCreated span, .taskFinished span {
+  display: flex;
+  padding: 0.125rem 0.5rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 62.4375rem;
+  background: var(--gray-400);
+}
+
+.taskCreated p {
+  color: var(--blue);
+}
+
+.taskFinished p {
+  color: var(--purple);
+}
+
+.emptyTasks {
+  display: flex;
+  padding: 4rem 1.5rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  align-self: stretch; 
+}

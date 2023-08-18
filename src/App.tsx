@@ -13,20 +13,24 @@ export function App() {
       <div className={styles.wrapper}>
         <main>
           <section className={styles.amountOfTasks}>
-            <div>
+            <div className={styles.taskCreated}>
               <p>Tarefas criadas</p>
               <span>0</span>
             </div>
-            <div>
+            <div className={styles.taskFinished}>
               <p>Concluídas</p>
               <span>0</span>
             </div>
           </section>
 
           <section className={styles.emptyTasks}>
-            <FaClipboardList size={40} />
-            <strong>Você ainda não tem tarefas cadastradas</strong>
-            <p>Crie tarefas e organize seus itens a fazer</p>
+            <FaClipboardList size={56} />
+            <div>
+              <p>
+                <strong>Você ainda não tem tarefas cadastradas</strong>
+              </p>
+              <p>Crie tarefas e organize seus itens a fazer</p>
+            </div>
           </section>
         </main>
       </div>
