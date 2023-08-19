@@ -15,7 +15,7 @@ export function App() {
           <section className={styles.amountOfTasks}>
             <div className={styles.taskCreated}>
               <p>Tarefas criadas</p>
-              <span>0</span>
+              <span>2</span>
             </div>
             <div className={styles.taskFinished}>
               <p>Concluídas</p>
