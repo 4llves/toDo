@@ -55,15 +55,24 @@ main {
 }
 
 .taskFinished p {
-  color: var(--purple);
+  color: var(--purple);  
 }
 
-.emptyTasks {
+.emptyTasks, .createdTasks {
+  margin-top: 1.5rem;
   display: flex;
-  padding: 4rem 1.5rem;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: .75rem;
+}
+
+.emptyTasks {    
+  padding: 4rem 1.5rem;  
   gap: 1rem;
-  align-self: stretch; 
+  align-self: stretch;
+  line-height: 140%; /* 1.4rem */
+
+  border-radius: 0.5rem;
+  border-top: 1px solid var(--gray-400);
 }

@@ -1,9 +1,10 @@
 import styles from './App.module.css'
 import './global.css'
 
-import { FaClipboardList } from 'react-icons/fa' // Importe o ícone corretamente
+import { LuClipboardList } from 'react-icons/lu' // Importe o ícone corretamente
 
 import { Header } from './components/Header'
+import { Task } from './components/Task'
 
 export function App() {
   return (
@@ -23,15 +24,20 @@ export function App() {
             </div>
           </section>
 
-          <section className={styles.emptyTasks}>
-            <FaClipboardList size={56} />
+          <section className={styles.createdTasks}>
+            <Task content="Test1" key={1} />
+            <Task content="Test2" key={1} />
+          </section>
+
+          {/* <section className={styles.emptyTasks}>
+            <LuClipboardList size={56} />
             <div>
               <p>
                 <strong>Você ainda não tem tarefas cadastradas</strong>
               </p>
               <p>Crie tarefas e organize seus itens a fazer</p>
             </div>
-          </section>
+          </section> */}
         </main>
       </div>
     </div>

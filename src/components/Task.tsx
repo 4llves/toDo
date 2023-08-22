@@ -1,10 +1,15 @@
-import styles from './Input.module.css'
+import styles from './Task.module.css'
 
-export function Task({ ...props }) {
+interface TaskProps {
+  content: string
+  onDeleteTask?: (content: string) => void
+}
+
+export function Task({ content, ...props }: TaskProps) {
   return (
     <div className={styles.wrapper} {...props}>
       <input type="checkbox" name="" id="" />
-      <p>lalala</p>
+      <p>{content}</p>
       <button></button>
     </div>
   )
