@@ -1,4 +1,5 @@
 import styles from './Task.module.css'
+import { GoTrash } from 'react-icons/go'
 
 interface TaskProps {
   content: string
@@ -10,7 +11,9 @@ export function Task({ content, ...props }: TaskProps) {
     <div className={styles.wrapper} {...props}>
       <input type="checkbox" name="" id="" />
       <p>{content}</p>
-      <button></button>
+      <button title="Deletar comentário">
+        <GoTrash size={24} />
+      </button>
     </div>
   )
 }
