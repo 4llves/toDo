@@ -12,7 +12,7 @@ export function Task({ content, ...props }: TaskProps) {
       <input type="checkbox" name="" id="" />
       <p>{content}</p>
       <button title="Deletar comentário">
-        <GoTrash size={24} />
+        <GoTrash />
       </button>
     </div>
   )

@@ -25,8 +25,14 @@ export function App() {
           </section>
 
           <section className={styles.createdTasks}>
-            <Task content="Test1" key={1} />
-            <Task content="Test2" key={1} />
+            <Task
+              content="Integer urna interdum massa libero auctor neque turpis turpis semper. Duis vel sed fames integer."
+              key={1}
+            />
+            <Task
+              content="Integer urna interdum massa libero auctor neque turpis turpis semper. Duis vel sed fames integer."
+              key={1}
+            />
           </section>
 
           {/* <section className={styles.emptyTasks}>
