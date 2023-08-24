@@ -36,3 +36,15 @@
   color: var(--gray-300);
   cursor: pointer;
 }
+
+input[type="checkbox"] {
+  appearance: none; /* Remove o estilo padrão do sistema */
+  -webkit-appearance: none;
+  width: 20px; /* Ajuste o tamanho do checkbox */
+  height: 20px;
+  border: 2px solid blue; /* Adicione uma borda azul */
+  border-radius: 50%; /* Torna o checkbox arredondado */
+  outline: none; /* Remove a borda de foco padrão */
+  transition: border-color 0.3s ease-in-out; /* Adicione uma transição suave */
+  cursor: pointer; /* Altera o cursor para indicar que é clicável */
+}
