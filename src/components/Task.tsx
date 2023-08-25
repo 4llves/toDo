@@ -1,19 +1,36 @@
 import styles from './Task.module.css'
 import { GoTrash } from 'react-icons/go'
 
-interface TaskProps {
+interface TaskType {
+  id: string
   content: string
   onDeleteTask?: (content: string) => void
 }
 
-export function Task({ content, ...props }: TaskProps) {
+interface TaskProps {
+  task: TaskType
+}
+
+export function Task({ task }: TaskProps) {
   return (
-    <div className={styles.wrapper} {...props}>
-      <input type="checkbox" name="" id="" />
-      <p>{content}</p>
-      <button title="Deletar comentário">
-        <GoTrash />
-      </button>
+    <div className={styles.wrapper}>
+      {task.map((line, index) => (
+        <div key={index}>
+          <input type="checkbox" name="" id="" />
+          <p>{line.content}</p>
+          <button title="Deletar comentário">
+            <GoTrash />
+          </button>
+        </div>
+      ))}
     </div>
   )
 }
+
+/* <div className={styles.wrapper} {...props}>
+      <input type="checkbox" name="" id="" />
+      <p>{task.title}</p>
+      <button title="Deletar comentário">
+        <GoTrash />
+      </button>
+    </div> */

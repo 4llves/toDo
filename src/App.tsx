@@ -1,10 +1,19 @@
 import styles from './App.module.css'
 import './global.css'
 
-import { LuClipboardList } from 'react-icons/lu' // Importe o ícone corretamente
-
 import { Header } from './components/Header'
-import { Task } from './components/Task'
+import { Task, TaskType } from './components/Task'
+
+import { LuClipboardList } from 'react-icons/lu'
+
+import { v4 as uuidv4 } from 'uuid'
+
+const tasks: TaskType[] = [  
+  {
+    id: uuidv4(),    
+    
+  }
+]
 
 export function App() {
   return (
@@ -25,14 +34,11 @@ export function App() {
           </section>
 
           <section className={styles.createdTasks}>
-            <Task
-              content="Integer urna interdum massa libero auctor neque turpis turpis semper. Duis vel sed fames integer."
-              key={1}
-            />
-            <Task
-              content="Integer urna interdum massa libero auctor neque turpis turpis semper. Duis vel sed fames integer."
-              key={1}
-            />
+            {tasks.map(task => {
+              return (
+                <Task task={task.title} key={task.id}/>
+              )
+            }}
           </section>
 
           {/* <section className={styles.emptyTasks}>
