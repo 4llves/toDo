@@ -10,8 +10,8 @@ import { v4 as uuidv4 } from 'uuid'
 
 const tasks: TaskType[] = [  
   {
-    id: uuidv4(),    
-    
+    id: uuidv4(),
+    content: "aaaaa"    
   }
 ]
 
@@ -36,7 +36,10 @@ export function App() {
           <section className={styles.createdTasks}>
             {tasks.map(task => {
               return (
-                <Task task={task.title} key={task.id}/>
+                <Task 
+                  key={task.id}
+                  task={task}
+                />
               )
             }}
           </section>
