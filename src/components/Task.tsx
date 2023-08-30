@@ -4,18 +4,19 @@ import { GoTrash } from 'react-icons/go'
 export interface TaskType {
   id: string
   content: string
+  isCompleted: boolean
   onDeleteTask?: (content: string) => void
 }
 
-// interface TaskProps {
-//   task: TaskType
-// }
+interface TaskProps {
+  task: TaskType
+}
 
-export function Task({ id, content, onDeleteTask }: TaskType) {
+export function Task({ task }: TaskProps) {
   return (
     <div className={styles.wrapper}>
       <input type="checkbox" name="" id="" />
-      <p>{content}</p>
+      <p>{task.content}</p>
       <button title="Deletar comentário">
         <GoTrash />
       </button>
