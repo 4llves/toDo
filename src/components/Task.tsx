@@ -1,3 +1,4 @@
+import { useState } from 'react'
 import styles from './Task.module.css'
 import { GoTrash } from 'react-icons/go'
 
@@ -13,9 +14,19 @@ interface TaskProps {
 }
 
 export function Task({ task }: TaskProps) {
+  const [isChecked, setIsChecked] = useState(task.isCompleted)
+
+  const handleCheckboxChange = () => {
+    setIsChecked(!isChecked)
+  }
+
   return (
     <div className={styles.wrapper}>
-      <input type="checkbox" name="" id="" />
+      <input
+        type="checkbox"
+        checked={isChecked}
+        onChange={handleCheckboxChange}
+      />
       <p>{task.content}</p>
       <button title="Deletar comentário">
         <GoTrash />
