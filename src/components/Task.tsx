@@ -20,6 +20,10 @@ export function Task({ task }: TaskProps) {
     setIsChecked(!isChecked)
   }
 
+  function handleDeleteTask() {
+    onDeletetask(content)
+  }
+
   return (
     <div className={styles.wrapper}>
       <input
@@ -28,7 +32,7 @@ export function Task({ task }: TaskProps) {
         onChange={handleCheckboxChange}
       />
       <p>{task.content}</p>
-      <button title="Deletar comentário">
+      <button title="Deletar comentário" onClick={handleDeleteTask}>
         <GoTrash />
       </button>
     </div>
